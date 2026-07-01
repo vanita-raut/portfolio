@@ -1,12 +1,4 @@
-// ============================================================
-// feedback.js
-// "Share Your Experience" — form handling + realtime review feed
-// ============================================================
-// Depends on: firebase-config.js (exports the initialized `db`)
-// Firestore collection used: "feedback"
-// Document shape:
-//   { name, email, rating, message, createdAt, approved }
-// ============================================================
+
 
 import { db } from "./firebase-config.js";
 import {
@@ -111,25 +103,12 @@ function starsMarkup(rating) {
   return html;
 }
 
-/* ------------------------------------------------------------
-   reCAPTCHA v3 — Spam protection (placeholder)
-   ------------------------------------------------------------
-   1. Add this line to the <head> of index.html:
-        <script src="https://www.google.com/recaptcha/api.js?render=YOUR_RECAPTCHA_SITE_KEY"></script>
-   2. Replace YOUR_RECAPTCHA_SITE_KEY below with your real site key.
-   3. Uncomment the grecaptcha.execute() call.
-   4. Send the returned token to a backend (e.g. a Firebase Cloud
-      Function) and verify it with your reCAPTCHA secret key before
-      trusting the submission — a token/score check must happen
-      server-side, since anything done only in the browser can be
-      bypassed.
------------------------------------------------------------- */
 async function getRecaptchaToken() {
-  // if (window.grecaptcha) {
-  //   return await window.grecaptcha.execute("YOUR_RECAPTCHA_SITE_KEY", {
-  //     action: "submit_feedback"
-  //   });
-  // }
+   if (window.grecaptcha) {
+     return await window.grecaptcha.execute("6LcmYD8tAAAAAKXiz3PU1ensQu36oWDqG4ot9VKu", {
+       action: "submit_feedback"
+     });
+   }
   return null;
 }
 
