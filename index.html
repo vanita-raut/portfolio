@@ -940,10 +940,21 @@
 
 <script>const images=document.querySelectorAll('.carousel-image');if(images.length){let i=0;const show=n=>{images.forEach(x=>x.classList.remove('active'));images[n].classList.add('active');};document.querySelector('.next').onclick=()=>{i=(i+1)%images.length;show(i)};document.querySelector('.prev').onclick=()=>{i=(i-1+images.length)%images.length;show(i)};setInterval(()=>{i=(i+1)%images.length;show(i)},4000);}</script>
 
-  <!-- ============================
-       SHARE YOUR EXPERIENCE — Firebase feedback module
-       (feedback.js imports firebase-config.js internally)
-  ============================= -->
+ <script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '6a451eac464d560b0c938d32' },
+          url: 'https://general-runtime.voiceflow.com',
+          voice: {
+            url: "https://runtime-api.voiceflow.com"
+          }
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
   <script type="module" src="feedback.js"></script>
 </body>
 </html>
