@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Vanita S. Raut — Counsellor & Psychotherapist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================
+       NAVIGATION
+  ============================= -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__logo">
+      <span class="nav__logo-mark">VR</span>
+      <span class="nav__logo-text">Dr. Vanita S. Raut</span>
+    </div>
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contributions">Contributions</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact" class="nav__cta">Get in Touch</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============================
+       HERO SECTION
+  ============================= -->
+  <section class="hero" id="hero" aria-label="Hero section">
+    <div class="hero__watermark" aria-hidden="true">
+      <!-- Brain outline -->
+      <svg class="wm wm--brain" viewBox="0 0 200 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M100 20 C70 20 45 40 40 65 C30 65 18 75 20 90 C15 95 12 105 18 115 C15 125 20 140 35 145 C40 160 55 168 70 165 C78 172 90 175 100 175 C110 175 122 172 130 165 C145 168 160 160 165 145 C180 140 185 125 182 115 C188 105 185 95 180 90 C182 75 170 65 160 65 C155 40 130 20 100 20Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M100 20 L100 175" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4"/>
+        <path d="M70 50 Q65 70 72 90 Q68 110 75 130" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M130 50 Q135 70 128 90 Q132 110 125 130" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M55 80 Q75 72 85 88 Q95 72 115 80 Q125 72 145 80" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M50 110 Q70 100 88 112 Q100 100 112 112 Q130 100 150 110" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+
+      <!-- Neuron -->
+      <svg class="wm wm--neuron" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="110" cy="110" r="16" stroke="currentColor" stroke-width="2.5"/>
+        <line x1="110" y1="94" x2="110" y2="40" stroke="currentColor" stroke-width="2"/>
+        <line x1="110" y1="126" x2="110" y2="180" stroke="currentColor" stroke-width="2"/>
+        <line x1="94" y1="110" x2="40" y2="80" stroke="currentColor" stroke-width="2"/>
+        <line x1="94" y1="110" x2="30" y2="130" stroke="currentColor" stroke-width="2"/>
+        <line x1="126" y1="110" x2="180" y2="80" stroke="currentColor" stroke-width="2"/>
+        <line x1="126" y1="110" x2="190" y2="130" stroke="currentColor" stroke-width="2"/>
+        <line x1="98" y1="98" x2="55" y2="55" stroke="currentColor" stroke-width="2"/>
+        <line x1="122" y1="98" x2="165" y2="55" stroke="currentColor" stroke-width="2"/>
+        <circle cx="110" cy="36" r="5" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="110" cy="184" r="5" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="36" cy="78" r="5" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="28" cy="132" r="5" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="184" cy="78" r="5" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="192" cy="132" r="5" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="52" cy="52" r="5" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="168" cy="52" r="5" stroke="currentColor" stroke-width="1.5"/>
+      </svg>
+
+      <!-- Heartbeat / EEG wave -->
+      <svg class="wm wm--wave" viewBox="0 0 280 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polyline points="0,30 40,30 55,10 65,50 75,20 85,40 95,30 130,30 145,5 155,55 162,25 170,35 180,30 220,30 235,12 245,48 252,22 260,38 268,30 280,30" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </svg>
+
+      <!-- Infinity / mind loop -->
+      <svg class="wm wm--infinity" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M100 40 C100 20 75 10 55 20 C35 30 35 50 55 60 C75 70 100 60 100 40 C100 20 125 10 145 20 C165 30 165 50 145 60 C125 70 100 60 100 40Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+
+      <!-- Lotus / mindfulness -->
+      <svg class="wm wm--lotus" viewBox="0 0 160 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M80 100 C80 100 50 80 45 55 C40 30 60 20 80 35 C100 20 120 30 115 55 C110 80 80 100 80 100Z" stroke="currentColor" stroke-width="2"/>
+        <path d="M80 100 C80 100 30 75 25 45 C20 20 45 10 65 30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M80 100 C80 100 130 75 135 45 C140 20 115 10 95 30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M80 100 C80 100 15 65 18 30 C21 10 48 5 60 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M80 100 C80 100 145 65 142 30 C139 10 112 5 100 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="80" y1="100" x2="80" y2="118" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M60 118 Q80 110 100 118" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <!-- Decorative blobs -->
+    <div class="hero__blob hero__blob--1" aria-hidden="true"></div>
+    <div class="hero__blob hero__blob--2" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <div class="hero__image-wrap">
+        <img
+          src="profile.jpeg"
+          alt="Dr. Vanita S. Raut, Counselling Psychotherapist"
+          class="hero__photo"
+        />
+        <div class="hero__image-ring" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero__text">
+        <p class="hero__eyebrow">Counsellor & Psychotherapist · PhD</p>
+        <h1 class="hero__name">Dr. Vanita<br /><em>Raut</em></h1>
+        <p class="hero__credential">RCI NO. : A104181</p>
+        <p class="hero__tagline">"Your safe space,<br />to heal & grow."</p>
+        <div class="hero__badges">
+          <span class="badge">Child Counselling</span>
+          <span class="badge">Parental Counselling</span>
+          <span class="badge">Relationship Issues</span>
+          <span class="badge">Psychological Testing</span>
+          <span class="badge">Couples Counselling</span>
+          <span class="badge">Mental Health Awareness</span>
+          <span class="badge">Emotional Intelligence</span>
+          <span class="badge">Stress Management</span>
+          <span class="badge">Pre-Marital Counseling</span>
+        </div>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">Book a Consultation</a>
+          <a href="#about" class="btn btn--ghost">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll" aria-hidden="true">
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============================
+       ABOUT / EDUCATION
+  ============================= -->
+  <section class="section about" id="about" aria-labelledby="about-heading">
+    <div class="container">
+
+      <div class="section__header">
+        <span class="section__tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          About
+        </span>
+        <h2 id="about-heading" class="section__title">A Mind Dedicated<br /><em>to Healing</em></h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__bio">
+          <p class="about__intro">Experienced psychology professional with a strong background in teaching, counseling, and community outreach. Skilled in relationship and child counseling, psychological testing, and group interventions, along with conducting workshops, lectures, and training programs.</p>
+          <p class="about__body">Proven ability in syllabus design, lab development, and organizing field visits, study tours, and awareness initiatives. Adept at coordinating with government bodies, managing departmental activities, engaging with diverse communities, and promoting mental health and well-being across various settings.</p>
+          
+<p class="about__body"><strong>Additional Qualifications:</strong> M.A. Sociology (2021), B.Ed. (2012)</p>
+<p class="about__body"><strong>Language Proficiency:</strong> Marathi, Hindi, English</p>
+
+          <div class="about__stats">
+            <div class="stat">
+              <span class="stat__num">18+</span>
+              <span class="stat__label">Years of Practice</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">500+</span>
+              <span class="stat__label">Clients Supported</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">18+</span>
+              <span class="stat__label">Publications</span>
+            </div>
+			<div class="stat">
+              <span class="stat__num">25+</span>
+              <span class="stat__label">Workshops conducted</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__education">
+          <h3 class="about__sub-title">Education</h3>
+
+          <div class="edu-card">
+            <div class="edu-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3.333 1.667 8.667 1.667 12 0v-5"/></svg>
+            </div>
+            <div>
+              <p class="edu-card__degree">PhD in Psychology</p>
+              <p class="edu-card__school">Sant Gadge Baba Amravati University</p>
+              <p class="edu-card__year">2026</p>
+            </div>
+          </div>
+		  
+          <div class="edu-card">
+            <div class="edu-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3.333 1.667 8.667 1.667 12 0v-5"/></svg>
+            </div>
+            <div>
+              <p class="edu-card__degree">M.Ed.</p>
+              <p class="edu-card__school">S.N.D.T. Women's University, Pune</p>
+              <p class="edu-card__year">2014</p>
+            </div>
+          </div>
+		  
+          <div class="edu-card">
+            <div class="edu-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3.333 1.667 8.667 1.667 12 0v-5"/></svg>
+            </div>
+            <div>
+              <p class="edu-card__degree">M.A. in Psychology</p>
+              <p class="edu-card__school">S.N.D.T. Women's University, Pune</p>
+              <p class="edu-card__year">2009</p>
+            </div>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3.333 1.667 8.667 1.667 12 0v-5"/></svg>
+            </div>
+            <div>
+              <p class="edu-card__degree">B.A. in Psychology</p>
+              <p class="edu-card__school">Sant Gadge Baba Amravati University</p>
+              <p class="edu-card__year">2007</p>
+            </div>
+          </div>
+
+          <h3 class="about__sub-title about__sub-title--mt">Certifications</h3>
+          <ul class="cert-list">
+            <li class="cert-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              PGDDRM - RCI Registered Counselling Psychotherapist
+            </li>
+            <li class="cert-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Certified Child Counselor
+            </li>
+            <li class="cert-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Certified Relationship Counselor
+            </li>
+            <li class="cert-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Psychological Testing & Assessment Specialist
+            </li>
+            <li class="cert-item">
+			<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="20 6 9 17 4 12"/></svg>
+			  SET (Psychology)
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       WORK EXPERIENCE
+  ============================= -->
+  <section class="section experience" id="experience" aria-labelledby="exp-heading">
+    <div class="experience__bg-wrap" aria-hidden="true">
+      <svg class="exp__bg-icon" viewBox="0 0 200 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M100 20 C70 20 45 40 40 65 C30 65 18 75 20 90 C15 95 12 105 18 115 C15 125 20 140 35 145 C40 160 55 168 70 165 C78 172 90 175 100 175 C110 175 122 172 130 165 C145 168 160 160 165 145 C180 140 185 125 182 115 C188 105 185 95 180 90 C182 75 170 65 160 65 C155 40 130 20 100 20Z" stroke="currentColor" stroke-width="2"/>
+        <path d="M100 20 L100 175" stroke="currentColor" stroke-width="1" stroke-dasharray="4 4"/>
+        <path d="M55 80 Q75 72 85 88 Q95 72 115 80 Q125 72 145 80" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M50 110 Q70 100 88 112 Q100 100 112 112 Q130 100 150 110" stroke="currentColor" stroke-width="1.5"/>
+      </svg>
+    </div>
+
+    <div class="container">
+      <div class="section__header section__header--light">
+        <span class="section__tag section__tag--light">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          Experience
+        </span>
+        <h2 id="exp-heading" class="section__title section__title--light">A Career Rooted in<br /><em>Compassion & Science</em></h2>
+      </div>
+
+      
+      <div class="timeline">
+
+        <div class="timeline__item">
+          <div class="timeline__dot" aria-hidden="true"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Counselor</h3>
+                <p class="timeline__org">Sukoon Project — Tata Institute of Social Sciences (TISS), Mumbai</p>
+              </div>
+              <span class="timeline__date">Present</span>
+            </div>
+            <ul class="timeline__list">
+              <li>Relationship counseling and mental health awareness among married couples.</li>
+              <li>Worked with initiatives at Amravati District Court.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot" aria-hidden="true"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Course Coordinator</h3>
+                <p class="timeline__org">Department of Lifelong Learning & Extension, SGBAU, Amravati</p>
+              </div>
+              <span class="timeline__date">Aug 2017 – Nov 2020</span>
+            </div>
+            <ul class="timeline__list">
+              <li>Syllabus designing and psychology lab development.</li>
+              <li>Organized workshops, study tours, and promotional activities.</li>
+              <li>Managed curricular and departmental activities.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot" aria-hidden="true"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Ward Coordinator</h3>
+                <p class="timeline__org">SWACH Seva Sahakari Sanstha, Pune</p>
+              </div>
+              <span class="timeline__date">Aug 2016 – May 2017</span>
+            </div>
+            <ul class="timeline__list">
+              <li>Coordinated activities between Pune Municipal Corporation officials and SWACH workers.</li>
+              <li>Conducted workshops and awareness programs across wards.</li>
+              <li>Handled worker appointments and foreign delegations.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot" aria-hidden="true"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Assistant Professor</h3>
+                <p class="timeline__org">P.G. Department of Psychology, S.N.D.T. Women’s University, Pune</p>
+              </div>
+              <span class="timeline__date">2015 – 2016</span>
+            </div>
+            <ul class="timeline__list">
+              <li>Teaching, conducting workshops, and organizing field visits.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot" aria-hidden="true"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Psychologist</h3>
+                <p class="timeline__org">Kirkee Cantonment Board, Pune</p>
+              </div>
+              <span class="timeline__date">Jun 2014 – Present</span>
+            </div>
+            <ul class="timeline__list">
+              <li>Child counseling, teacher training, and activities for special children.</li>
+              <li>Conducted workshops for girls on health & hygiene awareness.</li>
+            </ul>
+          </div>
+        </div>
+		
+		<div class="timeline__item">
+  <div class="timeline__dot" aria-hidden="true"></div>
+  <div class="timeline__card">
+    <div class="timeline__header">
+      <div>
+        <h3 class="timeline__role">Assistant Professor</h3>
+        <p class="timeline__org">P.G. Department of Education, S.N.D.T. Women’s University, Pune</p>
+      </div>
+      <span class="timeline__date">Aug 2014 – Apr 2015</span>
+    </div>
+    <ul class="timeline__list">
+      <li>Teaching psychology and education-related subjects.</li>
+      <li>Conducted workshops and organized field visits.</li>
+      <li>Supported academic and student development activities.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="timeline__item">
+  <div class="timeline__dot" aria-hidden="true"></div>
+  <div class="timeline__card">
+    <div class="timeline__header">
+      <div>
+        <h3 class="timeline__role">Child Counselor (PMC Schools)</h3>
+        <p class="timeline__org">APD (Academy Of Personality Development), Pune</p>
+      </div>
+      <span class="timeline__date">Sep 2009 – Mar 2011</span>
+    </div>
+    <ul class="timeline__list">
+      <li>Provided counseling and psychological testing for school students.</li>
+      <li>Conducted group activities and group counseling sessions.</li>
+      <li>Provided parental counseling and behavioral guidance.</li>
+    </ul>
+  </div>
+</div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================
+       ACHIEVEMENTS
+  ============================= -->
+  <section class="section achievements" id="achievements" aria-labelledby="ach-heading">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+          Achievements
+        </span>
+        <h2 id="ach-heading" class="section__title">Recognised for<br /><em>Excellence & Impact</em></h2>
+      </div>
+
+      <div class="ach-grid">
+
+        <div class="ach-card ach-card--featured">
+          <div class="ach-card__icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <div class="ach-card__year">2023</div>
+          <h3 class="ach-card__title">Distinguished Counselor Award</h3>
+          <p class="ach-card__desc">Recognized for outstanding contribution to mental health advocacy and counseling services in Maharashtra.</p>
+        </div>
+
+        <div class="ach-card">
+          <div class="ach-card__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="ach-card__year">2021</div>
+          <h3 class="ach-card__title">Best Educator Award</h3>
+          <p class="ach-card__desc">Awarded for excellence in teaching and mentoring psychology students at Savitribai Phule Pune University.</p>
+        </div>
+
+        <div class="ach-card">
+          <div class="ach-card__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+          <div class="ach-card__year">2020</div>
+          <h3 class="ach-card__title">Research Excellence</h3>
+          <p class="ach-card__desc">Published research on child psychology and family dynamics in peer-reviewed international journals.</p>
+        </div>
+
+        <div class="ach-card">
+          <div class="ach-card__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <div class="ach-card__year">2019</div>
+          <h3 class="ach-card__title">Community Service Award</h3>
+          <p class="ach-card__desc">Honored for mental health awareness campaigns and community outreach initiatives across Amravati district.</p>
+        </div>
+
+        <div class="ach-card">
+          <div class="ach-card__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="ach-card__year">2018</div>
+          <h3 class="ach-card__title">RCI Certification</h3>
+          <p class="ach-card__desc">Registered Counselling Psychotherapist with the Rehabilitation Council of India (RCI NO. : A104181).</p>
+        </div>
+
+        <div class="ach-card">
+          <div class="ach-card__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="ach-card__year">2017</div>
+          <h3 class="ach-card__title">Professional Excellence</h3>
+          <p class="ach-card__desc">Recognized for building one of the leading counseling centers in the region with exceptional client outcomes.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       OTHER CONTRIBUTIONS
+  ============================= -->
+  <section class="section contributions" id="contributions" aria-labelledby="contrib-heading">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          Contributions
+        </span>
+        <h2 id="contrib-heading" class="section__title">Beyond the<br /><em>Counseling Room</em></h2>
+      </div>
+
+      <div class="contrib-grid">
+
+        <!-- Workshops -->
+        <div class="contrib-block">
+  <div class="contrib-block__header">
+    <div class="contrib-block__icon" aria-hidden="true">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+        <line x1="3" y1="9" x2="21" y2="9"/>
+        <line x1="9" y1="21" x2="9" y2="9"/>
+      </svg>
+    </div>
+    <h3 class="contrib-block__title">Workshops Conducted</h3>
+  </div>
+
+  <ul class="contrib-list">
+
+    <li>
+      <span class="contrib-list__dot" aria-hidden="true"></span>
+      <div>
+        <strong>Emotional Intelligence</strong>
+        <span>— Interactive sessions on emotional awareness, empathy, and personal growth.</span>
+      </div>
+    </li>
+
+    <li>
+      <span class="contrib-list__dot" aria-hidden="true"></span>
+      <div>
+        <strong>आनंद तरंग</strong>
+        <span>— Session on techniques and activities to improve happiness index and emotional well-being.</span>
+      </div>
+    </li>
+
+    <li>
+      <span class="contrib-list__dot" aria-hidden="true"></span>
+      <div>
+        <strong>Learning Disability & Parental Counseling</strong>
+        <span>— Guidance sessions for parents and educators on learning difficulties and child support strategies.</span>
+      </div>
+    </li>
+
+    <li>
+      <span class="contrib-list__dot" aria-hidden="true"></span>
+      <div>
+        <strong>Marital & Relationship Counseling</strong>
+        <span>— Counseling workshops focused on communication, trust, and healthy relationships.</span>
+      </div>
+    </li>
+
+    <li>
+      <span class="contrib-list__dot" aria-hidden="true"></span>
+      <div>
+        <strong>Creativity in Various Fields</strong>
+        <span>— Sessions exploring creative thinking and practical applications across domains.</span>
+      </div>
+    </li>
+
+    <li>
+      <span class="contrib-list__dot" aria-hidden="true"></span>
+      <div>
+        <strong>Stress Management</strong>
+        <span>— Practical techniques for managing stress, anxiety, and emotional balance.</span>
+      </div>
+    </li>
+
+    <li>
+      <span class="contrib-list__dot" aria-hidden="true"></span>
+      <div>
+        <strong>Time Management</strong>
+        <span>— Workshops on productivity, planning, and work-life balance.</span>
+      </div>
+    </li>
+
+    <li>
+      <span class="contrib-list__dot" aria-hidden="true"></span>
+      <div>
+        <strong>Self Awareness & Self Care at Workplace</strong>
+        <span>— Mental health awareness sessions for workers focused on self-care and emotional wellness.</span>
+      </div>
+    </li>
+
+  </ul>
+</div>
+
+<br>
+        <!-- Community -->
+        <div class="contrib-block contrib-block--wide">
+          <div class="contrib-block__header">
+            <div class="contrib-block__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="contrib-block__title">Community Service & Mental Health Initiatives</h3>
+          </div>
+          <div class="contrib-community">
+            <div class="community-card">
+              <p class="community-card__num">Member of Various Committees</p>
+              <p class="community-card__label">Yashwantrao Chavan Maharashtra Open University, Amravati</p>
+            </div>
+            <div class="community-card">
+              <p class="community-card__num">Psychologist (Grievance Cell)</p>
+              <p class="community-card__label">Kirkee Cantonment Board, Pune | Since 2014</p>
+            </div>
+            <div class="community-card">
+              <p class="community-card__num">Professor & Visiting Faculty</p>
+              <p class="community-card__label">SIPNA Engineering College, Government Engineering College, Amravati</p>
+            </div>
+            <div class="community-card">
+              <p class="community-card__num">Master Trainer</p>
+              <p class="community-card__label">Indian Institute of Science and Research (IISER)<br>&<br>Leela Punawala Foundation</p>
+            </div>
+            <div class="community-card">
+              <p class="community-card__num">Soft Skills Facilitator</p>
+              <p class="community-card__label">SGBAU, Amravati — Corporate & Student Training</p>
+            </div>
+            <div class="community-card">
+              <p class="community-card__num">Founder Director</p>
+              <p class="community-card__label">Vatsalanand Counseling Center, Amravati</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       PHOTO GALLERY
+  ============================= -->
+  <section class="section gallery" id="gallery" aria-labelledby="gallery-heading">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          Gallery
+        </span>
+        <h2 id="gallery-heading" class="section__title">Professional<br /><em>Moments & Impact</em></h2>
+      </div>
+
+      <div class="gallery__grid">
+
+        <!-- Featured 16:9 Image -->
+        <div class="gallery-carousel">
+<button class="carousel-btn prev">&#10094;</button>
+<div class="carousel-track">
+<img src="1.jpg" class="carousel-image active"/>
+<img src="2.jpeg" class="carousel-image"/>
+<img src="3.jpeg" class="carousel-image"/>
+<img src="4.jpeg" class="carousel-image"/>
+<img src="5.jpeg" class="carousel-image"/>
+<img src="6.jpeg" class="carousel-image"/>
+<img src="7.jpeg" class="carousel-image"/>
+<img src="8.jpeg" class="carousel-image"/>
+<img src="9.jpeg" class="carousel-image"/>
+<img src="10.jpeg" class="carousel-image"/>
+<img src="11.jpeg" class="carousel-image"/>
+<img src="12.jpeg" class="carousel-image"/>
+<img src="13.jpeg" class="carousel-image"/>
+<img src="14.jpeg" class="carousel-image"/>
+<img src="15.jpeg" class="carousel-image"/>
+<img src="16.jpeg" class="carousel-image"/>
+<img src="17.jpeg" class="carousel-image"/>
+<img src="18.jpeg" class="carousel-image"/>
+<img src="19.jpeg" class="carousel-image"/>
+<img src="20.jpeg" class="carousel-image"/>
+<img src="21.jpeg" class="carousel-image"/>
+<img src="22.jpeg" class="carousel-image"/>
+<img src="23.jpeg" class="carousel-image"/>
+<img src="24.jpeg" class="carousel-image"/>
+<img src="25.jpeg" class="carousel-image"/>
+<img src="26.jpeg" class="carousel-image"/>
+<img src="27.jpeg" class="carousel-image"/>
+<img src="28.jpeg" class="carousel-image"/>
+<img src="29.jpeg" class="carousel-image"/>
+<img src="30.jpeg" class="carousel-image"/>
+<img src="31.jpeg" class="carousel-image"/>
+<img src="32.jpeg" class="carousel-image"/>
+<img src="33.jpeg" class="carousel-image"/>
+<img src="34.jpeg" class="carousel-image"/>
+<img src="35.jpeg" class="carousel-image"/>
+<img src="36.jpeg" class="carousel-image"/>
+<img src="37.jpeg" class="carousel-image"/>
+<img src="38.jpeg" class="carousel-image"/>
+<img src="39.jpeg" class="carousel-image"/>
+<img src="40.jpeg" class="carousel-image"/>
+<img src="41.jpeg" class="carousel-image"/>
+<img src="42.jpeg" class="carousel-image"/>
+<img src="43.jpeg" class="carousel-image"/>
+<img src="44.jpeg" class="carousel-image"/>
+</div>
+<button class="carousel-btn next">&#10095;</button>
+</div>
+
+        
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       TESTIMONIALS
+  ============================= -->
+  <section class="section testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Testimonials
+        </span>
+        <h2 id="testimonials-heading" class="section__title">Words From<br /><em>Those I've Helped</em></h2>
+        <p class="section__subtitle">A few reflections shared by clients and colleagues on their experience of working together. Names are withheld to protect confidentiality.</p>
+      </div>
+
+      <div class="testimonial-grid">
+
+        <div class="testimonial-card">
+          <svg class="testimonial-card__quote-icon" width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.5 8C6.5 8 4 10.5 4 13.5S6.5 19 9.5 19c.3 0 .6 0 .9-.1-.6 1.4-1.8 2.5-3.4 3.1l.6 1.5c3.3-1.2 5.4-4 5.4-7.5V13c0-2.8-2.3-5-5-5zm10 0c-3 0-5.5 2.5-5.5 5.5s2.5 5.5 5.5 5.5c.3 0 .6 0 .9-.1-.6 1.4-1.8 2.5-3.4 3.1l.6 1.5c3.3-1.2 5.4-4 5.4-7.5V13c0-2.8-2.3-5-5-5z"/></svg>
+          <div class="testimonial-card__stars" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="testimonial-card__text">"Dr. Raut's Jamvant therapy has truly been a life-changing experience for me. It helped me rediscover happiness, positivity, and self-confidence. Every session brought new hope and inner peace. Thank you for this wonderful journey of transformation!"</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">S</div>
+            <div>
+              <p class="testimonial-card__name">Stress Management</p>
+              <p class="testimonial-card__role">Adult Counselling Client</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <svg class="testimonial-card__quote-icon" width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.5 8C6.5 8 4 10.5 4 13.5S6.5 19 9.5 19c.3 0 .6 0 .9-.1-.6 1.4-1.8 2.5-3.4 3.1l.6 1.5c3.3-1.2 5.4-4 5.4-7.5V13c0-2.8-2.3-5-5-5zm10 0c-3 0-5.5 2.5-5.5 5.5s2.5 5.5 5.5 5.5c.3 0 .6 0 .9-.1-.6 1.4-1.8 2.5-3.4 3.1l.6 1.5c3.3-1.2 5.4-4 5.4-7.5V13c0-2.8-2.3-5-5-5z"/></svg>
+          <div class="testimonial-card__stars" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="testimonial-card__text">"As a parent, I was struggling to understand my child's behaviour. Dr. Raut's warmth and practical strategies made a real difference within a few sessions — I finally feel equipped to support my son."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">P</div>
+            <div>
+              <p class="testimonial-card__name">Parent</p>
+              <p class="testimonial-card__role">Child Counselling Client</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <svg class="testimonial-card__quote-icon" width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.5 8C6.5 8 4 10.5 4 13.5S6.5 19 9.5 19c.3 0 .6 0 .9-.1-.6 1.4-1.8 2.5-3.4 3.1l.6 1.5c3.3-1.2 5.4-4 5.4-7.5V13c0-2.8-2.3-5-5-5zm10 0c-3 0-5.5 2.5-5.5 5.5s2.5 5.5 5.5 5.5c.3 0 .6 0 .9-.1-.6 1.4-1.8 2.5-3.4 3.1l.6 1.5c3.3-1.2 5.4-4 5.4-7.5V13c0-2.8-2.3-5-5-5z"/></svg>
+          <div class="testimonial-card__stars" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="testimonial-card__text">"Dr. Raut's workshop on stress management gave our entire team practical tools we still use today. Her ability to make psychology accessible and relevant is exceptional."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">W</div>
+            <div>
+              <p class="testimonial-card__name">Workshop Participant</p>
+              <p class="testimonial-card__role">Corporate Wellness Session</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       SHARE YOUR EXPERIENCE (FEEDBACK)
+  ============================= -->
+  <section class="section share" id="share-experience" aria-labelledby="share-heading">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Share Your Experience
+        </span>
+        <h2 id="share-heading" class="section__title">Your Voice<br /><em>Matters to Us</em></h2>
+        <p class="section__subtitle">Had a session or workshop with Dr. Raut? Share a few words to help others feel confident about starting their own journey.</p>
+      </div>
+
+      <!-- Rating Summary -->
+      <div class="share__summary">
+        <div class="share__summary-stars" id="summaryStars" aria-hidden="true"></div>
+        <p class="share__summary-average"><span id="summaryAvgNumber">–</span></p>
+        <p class="share__summary-count" id="summaryCount">Loading reviews…</p>
+      </div>
+
+      <!-- Feedback Form -->
+      <div class="share__form-card">
+        <form id="feedbackForm" class="share__form" novalidate>
+          <div class="share__form-row">
+            <div class="share__field">
+              <label for="fbName">Name <span class="share__optional">(optional)</span></label>
+              <input type="text" id="fbName" name="name" placeholder="Your name" autocomplete="name" maxlength="80" />
+            </div>
+            <div class="share__field">
+              <label for="fbEmail">Email <span class="share__optional">(optional)</span></label>
+              <input type="email" id="fbEmail" name="email" placeholder="you@example.com" autocomplete="email" maxlength="120" />
+            </div>
+          </div>
+
+          <div class="share__field">
+            <label id="ratingLabel">Your Rating <span class="share__required">*</span></label>
+            <div class="share__rating" id="ratingStars" role="radiogroup" aria-labelledby="ratingLabel">
+              <button type="button" class="share__star" data-value="1" aria-label="1 star">&#9733;</button>
+              <button type="button" class="share__star" data-value="2" aria-label="2 stars">&#9733;</button>
+              <button type="button" class="share__star" data-value="3" aria-label="3 stars">&#9733;</button>
+              <button type="button" class="share__star" data-value="4" aria-label="4 stars">&#9733;</button>
+              <button type="button" class="share__star" data-value="5" aria-label="5 stars">&#9733;</button>
+            </div>
+            <p class="share__error" id="ratingError">Please select a rating.</p>
+          </div>
+
+          <div class="share__field">
+            <label for="fbMessage">Your Feedback <span class="share__required">*</span></label>
+            <textarea id="fbMessage" name="message" rows="4" placeholder="Tell us about your experience..." maxlength="800" required></textarea>
+            <p class="share__error" id="messageError">Please share a few words about your experience.</p>
+          </div>
+
+          <!-- ============================================================
+               reCAPTCHA v3 (Spam Protection) — placeholder
+               1. Add to <head> of index.html:
+                  <script src="https://www.google.com/recaptcha/api.js?render=YOUR_RECAPTCHA_SITE_KEY"></script>
+               2. Uncomment the token call inside feedback.js (getRecaptchaToken)
+               3. Replace YOUR_RECAPTCHA_SITE_KEY in both places
+          ============================================================= -->
+
+          <button type="submit" class="btn btn--primary btn--full share__submit" id="submitBtn">
+            <span class="share__submit-text">Submit Feedback</span>
+            <span class="share__spinner" id="submitSpinner" aria-hidden="true"></span>
+          </button>
+
+          <p class="share__status share__status--success" id="successMsg" role="status">Thank you! Your feedback has been submitted.</p>
+          <p class="share__status share__status--error" id="errorMsg" role="alert">Something went wrong. Please try again in a moment.</p>
+        </form>
+      </div>
+
+      <!-- Reviews List (newest first, realtime) -->
+      <div class="share__reviews" id="reviewsList" aria-live="polite">
+        <p class="share__reviews-empty" id="reviewsEmpty">Be the first to share your experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       CONTACT
+  ============================= -->
+  <section class="section contact" id="contact" aria-labelledby="contact-heading">
+    <div class="contact__bg" aria-hidden="true">
+      <svg viewBox="0 0 280 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polyline points="0,30 40,30 55,10 65,50 75,20 85,40 95,30 130,30 145,5 155,55 162,25 170,35 180,30 220,30 235,12 245,48 252,22 260,38 268,30 280,30" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Contact
+        </span>
+        <h2 id="contact-heading" class="section__title">Start Your<br /><em>Journey Today</em></h2>
+        <p class="section__subtitle">Reach out for a confidential consultation. All enquiries are treated with the utmost care and discretion.</p>
+      </div>
+
+      <div class="contact__info-grid">
+        <div class="contact__info-card">
+          <div class="contact__info-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <p class="contact__info-label">Email</p>
+            <p class="contact__info-value">
+              <a href="mailto:vanita.raut@tiss.ac.in">vanita.raut@tiss.ac.in</a><br>
+              <a href="mailto:vanitad09@gmail.com">vanitad09@gmail.com</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="contact__info-card">
+          <div class="contact__info-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.5 2 2 0 0 1 3.58 1.32h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l1.04-1.04a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <p class="contact__info-label">Phone</p>
+            <p class="contact__info-value">
+              <a href="tel:+919028109377">+91 9028109377</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="contact__info-card">
+          <div class="contact__info-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <p class="contact__info-label">Address</p>
+            <p class="contact__info-value">Amravati, Maharashtra, India — 444601</p>
+          </div>
+        </div>
+
+        <div class="contact__info-card">
+          <div class="contact__info-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <p class="contact__info-label">Consultation Hours</p>
+            <p class="contact__info-value">Mon–Sat: 9:00 am – 6:30 pm IST</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       FOOTER
+  ============================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo-mark">VR</span>
+        <div>
+          <p class="footer__name">Dr. Vanita S. Raut</p>
+          <p class="footer__title">PhD · Counsellor & Psychotherapist</p>
+        </div>
+      </div>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contributions">Contributions</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer__copy">©2026 | All rights reserved.<br />
+        <span>RCI NO. : A104181</span>
+      </p>
+    </div>
+  </footer>
+
+
+<script>const images=document.querySelectorAll('.carousel-image');if(images.length){let i=0;const show=n=>{images.forEach(x=>x.classList.remove('active'));images[n].classList.add('active');};document.querySelector('.next').onclick=()=>{i=(i+1)%images.length;show(i)};document.querySelector('.prev').onclick=()=>{i=(i-1+images.length)%images.length;show(i)};setInterval(()=>{i=(i+1)%images.length;show(i)},4000);}</script>
+
+  <!-- ============================
+       SHARE YOUR EXPERIENCE — Firebase feedback module
+       (feedback.js imports firebase-config.js internally)
+  ============================= -->
+  <script type="module" src="feedback.js"></script>
+</body>
+</html>
