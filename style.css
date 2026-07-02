@@ -1929,10 +1929,9 @@ p + p {
   }
 }
 
-.hero__degree {
-  font-size: 0.45em;   /* Adjust as needed */
-  font-weight: 10;
-  margin-left: 4px;
+.hero__name small {
+    font-size: 40%;
+    font-weight: 100;
 }
 
 .carousel-track {
