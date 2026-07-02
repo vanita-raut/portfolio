@@ -1928,3 +1928,25 @@ p + p {
     font-size: var(--size-lg);
   }
 }
+
+.hero__degree {
+  font-size: 0.45em;   /* Adjust as needed */
+  font-weight: 100;
+  margin-left: 4px;
+}
+
+.carousel-track {
+    width: 100%;
+}
+
+.carousel-image {
+    display: none;
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+.carousel-image.active {
+    display: block;
+}
