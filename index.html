@@ -104,8 +104,8 @@
       </div>
 
       <div class="hero__text">
-        <p class="hero__eyebrow">Counsellor & Psychotherapist · PhD</p>
-        <h1 class="hero__name">Dr. Vanita<br /><em>Raut</em></h1>
+        <p class="hero__eyebrow">Counsellor & Psychotherapist</p>
+        <h1 class="hero__name">Dr. Vanita<br /><em>Raut</em> <span class="hero__degree">· PhD</span></h1>
         <p class="hero__credential">RCI NO. : A104181</p>
         <p class="hero__tagline">"Your safe space,<br />to heal & grow."</p>
         <div class="hero__badges">
@@ -606,6 +606,13 @@
               <p class="community-card__num">Founder Director</p>
               <p class="community-card__label">Vatsalanand Counseling Center, Amravati</p>
             </div>
+			  <div class="community-card">
+              <p class="community-card__num">Visiting Faculty</p>
+              <p class="community-card__label">Neuropsychiatric Care Unit - Dr. Chandurkar,<br>
+			  Dr.Hedgewar Hospital,<br>
+			  Radiant Hospital,<br>
+			  PDMC, Amravati</p>
+            </div>
           </div>
         </div>
 
@@ -631,51 +638,7 @@
         <!-- Featured 16:9 Image -->
         <div class="gallery-carousel">
 <button class="carousel-btn prev">&#10094;</button>
-<div class="carousel-track">
-<img src="1.jpg" class="carousel-image active"/>
-<img src="2.jpeg" class="carousel-image"/>
-<img src="3.jpeg" class="carousel-image"/>
-<img src="4.jpeg" class="carousel-image"/>
-<img src="5.jpeg" class="carousel-image"/>
-<img src="6.jpeg" class="carousel-image"/>
-<img src="7.jpeg" class="carousel-image"/>
-<img src="8.jpeg" class="carousel-image"/>
-<img src="9.jpeg" class="carousel-image"/>
-<img src="10.jpeg" class="carousel-image"/>
-<img src="11.jpeg" class="carousel-image"/>
-<img src="12.jpeg" class="carousel-image"/>
-<img src="13.jpeg" class="carousel-image"/>
-<img src="14.jpeg" class="carousel-image"/>
-<img src="15.jpeg" class="carousel-image"/>
-<img src="16.jpeg" class="carousel-image"/>
-<img src="17.jpeg" class="carousel-image"/>
-<img src="18.jpeg" class="carousel-image"/>
-<img src="19.jpeg" class="carousel-image"/>
-<img src="20.jpeg" class="carousel-image"/>
-<img src="21.jpeg" class="carousel-image"/>
-<img src="22.jpeg" class="carousel-image"/>
-<img src="23.jpeg" class="carousel-image"/>
-<img src="24.jpeg" class="carousel-image"/>
-<img src="25.jpeg" class="carousel-image"/>
-<img src="26.jpeg" class="carousel-image"/>
-<img src="27.jpeg" class="carousel-image"/>
-<img src="28.jpeg" class="carousel-image"/>
-<img src="29.jpeg" class="carousel-image"/>
-<img src="30.jpeg" class="carousel-image"/>
-<img src="31.jpeg" class="carousel-image"/>
-<img src="32.jpeg" class="carousel-image"/>
-<img src="33.jpeg" class="carousel-image"/>
-<img src="34.jpeg" class="carousel-image"/>
-<img src="35.jpeg" class="carousel-image"/>
-<img src="36.jpeg" class="carousel-image"/>
-<img src="37.jpeg" class="carousel-image"/>
-<img src="38.jpeg" class="carousel-image"/>
-<img src="39.jpeg" class="carousel-image"/>
-<img src="40.jpeg" class="carousel-image"/>
-<img src="41.jpeg" class="carousel-image"/>
-<img src="42.jpeg" class="carousel-image"/>
-<img src="43.jpeg" class="carousel-image"/>
-<img src="44.jpeg" class="carousel-image"/>
+<div class="carousel-track" id="carouselTrack">
 </div>
 <button class="carousel-btn next">&#10095;</button>
 </div>
@@ -930,7 +893,44 @@
   </footer>
 
 
-<script>const images=document.querySelectorAll('.carousel-image');if(images.length){let i=0;const show=n=>{images.forEach(x=>x.classList.remove('active'));images[n].classList.add('active');};document.querySelector('.next').onclick=()=>{i=(i+1)%images.length;show(i)};document.querySelector('.prev').onclick=()=>{i=(i-1+images.length)%images.length;show(i)};setInterval(()=>{i=(i+1)%images.length;show(i)},4000);}</script>
+<script>const carouselTrack = document.getElementById("carouselTrack");
+
+// Generate images
+for (let i = 1; i <= 44; i++) {
+    const img = document.createElement("img");
+    img.src = i === 1 ? `${i}.jpg` : `${i}.jpeg`;
+    img.className = "carousel-image";
+    if (i === 1) img.classList.add("active");
+    carouselTrack.appendChild(img);
+}
+
+const images = document.querySelectorAll(".carousel-image");
+let currentIndex = 0;
+
+// Display image
+function showImage(index) {
+    images.forEach(img => img.classList.remove("active"));
+    images[index].classList.add("active");
+}
+
+// Next image
+function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+}
+
+// Previous image
+function prevImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+}
+
+// Button events
+document.querySelector(".next").addEventListener("click", nextImage);
+document.querySelector(".prev").addEventListener("click", prevImage);
+
+// Auto slide every 3 seconds
+let autoSlide = setInterval(nextImage, 3000);</script>
 
 <script type="text/javascript">
   (function(d, t) {
